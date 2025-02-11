@@ -1,8 +1,8 @@
-const DashBoard = ({ selectedPokemon, removePokemon }) => {
+const DashBoard = ({ selectedPokemons, removePokemon }) => {
   return (
     <div>
       <h2>Selected Pokemon</h2>
-      {selectedPokemon.map((pokemon) => {
+      {selectedPokemons.map((pokemon) => {
         <div key={pokemon.id}>
           <img src={pokemon.img_url} alt={pokemon.korean_name} />
           <h3>{pokemon.korean_name}</h3>
